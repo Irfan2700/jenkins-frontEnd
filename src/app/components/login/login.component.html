@@ -1,16 +1,29 @@
-<div class="container">
-  <div class="card card-container">
-      <div class="admin">User Login</div>
+<!-- <div fxLayout='row'> -->
+    <!-- <div fxFlex='38' fxFlex.xs='0' fxFlex.sm='8' fxFlex.md='16' fxFlex.lg='33'></div> -->
+
+    <!-- <div fxFlex='24' fxFlex.xs='100' fxFlex.sm='84' fxFlex.md='68' fxFlex.lg='34'> -->
+<div fxLayoutAlign="center center">
+  <mat-card class="mainCard" >
+    <div fxLayout="column">
+      <!-- <div fxLayout="row"> -->
+        <div  class="title">User Login</div>
+        <!-- <div class="title">User Login</div> -->
+      <!-- </div> -->
      
-      <img id="profile-img" class="profile-img-card" src="//ssl.gstatic.com/accounts/ui/avatar_2x.png" />
-      <p id="profile-name" class="profile-name-card"></p>
-      <form class="form-signin">
-          
-          <input type="email" id="inputEmail" class="form-control" placeholder="Email address"   required autofocus>
-          <input type="password" id="inputPassword" class="form-control" placeholder="Password"  required>
-          
-          <button class="btn btn-lg btn-primary btn-block btn-signin" type="submit">Login</button>
-          <h6 class="error"></h6>
-      </form>
+    <mat-form-field>
+      <input style="width:100%" matInput placeholder="Enter your email" required>
+    </mat-form-field>
+    <mat-form-field>
+      <input style="width:100%" matInput placeholder="Enter your password" required>
+    </mat-form-field>
+ 
+    <div fxLayout="row">
+        <div fxFlex=35></div>
+      <button class="loginBtn" (click)="login()" mat-raised-button color="primary">Login</button>
+    </div>
   </div>
+  </mat-card>
 </div>
+<!-- </div> -->
+
+<!-- </div> -->

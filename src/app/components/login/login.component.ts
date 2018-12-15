@@ -11,5 +11,12 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+  private body={
+    "email":"",
+    "password":""
+  }
+  login(){
+    
+  }
 
 }
